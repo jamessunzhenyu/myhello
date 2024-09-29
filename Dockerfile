@@ -4,5 +4,5 @@ RUN apk add --no-cache libc6-compat
 #WORKDIR /opt/
 COPY hello .
 RUN chmod +x hello
-#ENTRYPOINT ["/usr/local/bin/hello"]
+ENTRYPOINT ["/usr/local/bin/hello"]
 CMD ["./hello"]
